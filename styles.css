@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0,0, 0.2);
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+#gameboard{
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    border: solid 1px gray;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    border: solid 1px gray;
+    box-sizing: border-box;
+}
