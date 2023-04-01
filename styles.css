@@ -25,4 +25,42 @@ body{
     height: 100px;
     border: solid 1px gray;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    width: 80px;
+    height: 80px;
+    border: solid red 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.cross{
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    position: relative;
+}
+
+.cross::before{
+    content: "";
+    background-color: blue;
+    width: 20px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 38%;
+}
+
+.cross::after{
+    content: "";
+    background-color: blue;
+    width: 80px;
+    height: 20px;
+    position: absolute;
+    top: 38%;
+    left: 0;
 }
